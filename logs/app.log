@@ -1,0 +1,23 @@
+[INFO ] 2023-12-13 10:05:52.467 [main] UserTests - *************Creating user************
+[INFO ] 2023-12-13 10:40:48.159 [main] UserTests2 - *************Creating user************
+[INFO ] 2023-12-13 11:03:02.141 [main] UserTests - *************Creating user************
+[INFO ] 2023-12-13 11:03:04.464 [main] UserTests - *************Created user************
+[INFO ] 2023-12-13 11:03:05.594 [main] UserTests - *************Userinfo reading************
+[INFO ] 2023-12-13 11:03:07.868 [main] UserTests - *************Updating user info************
+[INFO ] 2023-12-13 11:03:09.040 [main] UserTests - *************Deleting user************
+[INFO ] 2023-12-13 11:17:34.101 [main] UserTests - *************Creating user************
+[INFO ] 2023-12-13 11:17:36.213 [main] UserTests - *************Created user************
+[INFO ] 2023-12-13 11:17:37.397 [main] UserTests - *************Userinfo reading************
+[INFO ] 2023-12-13 11:17:39.644 [main] UserTests - *************Updating user info************
+[INFO ] 2023-12-13 11:17:40.756 [main] UserTests - *************Deleting user************
+[INFO ] 2023-12-13 11:19:34.469 [main] UserTests - *************Creating user************
+[INFO ] 2023-12-13 11:19:59.292 [main] UserTests - *************Creating user************
+[INFO ] 2023-12-13 11:20:01.496 [main] UserTests - *************Created user************
+[INFO ] 2023-12-13 11:20:02.581 [main] UserTests - *************Userinfo reading************
+[INFO ] 2023-12-13 11:20:04.808 [main] UserTests - *************Updating user info************
+[INFO ] 2023-12-13 11:20:05.957 [main] UserTests - *************Deleting user************
+[INFO ] 2023-12-13 11:27:12.487 [main] UserTests - *************Creating user************
+[INFO ] 2023-12-13 11:27:14.799 [main] UserTests - *************Created user************
+[INFO ] 2023-12-13 11:27:15.939 [main] UserTests - *************Userinfo reading************
+[INFO ] 2023-12-13 11:27:18.124 [main] UserTests - *************Updating user info************
+[INFO ] 2023-12-13 11:27:19.246 [main] UserTests - *************Deleting user************

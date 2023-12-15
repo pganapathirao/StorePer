@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">PetSuite</th></tr>
+<tr><td><a href="#t0">PetTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">711</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PetTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">api.test.UserTests</td><td><a href="#m0">testDeleteUserByName</a></td><td rowspan="1">1702446574571</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">testGetUserByName</a></td><td rowspan="1">1702446574566</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">testPostUser</a></td><td rowspan="1">1702446574464</td><td rowspan="1">95</td></tr><tr class="failedeven"><td><a href="#m3">testUpdateUserByName</a></td><td rowspan="1">1702446574568</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>PetTest</h2><h3 id="m0">api.test.UserTests#testDeleteUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at api.endpoints.UserEndpoints.deleteuser(UserEndpoints.java:57)
+	at api.test.UserTests.testDeleteUserByName(UserTests.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at api.endpoints.UserEndpoints.createuser(UserEndpoints.java:16)
+	at api.test.UserTests.testPostUser(UserTests.java:46)
+	... 28 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.UserTests#testGetUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at api.endpoints.UserEndpoints.readuser(UserEndpoints.java:30)
+	at api.test.UserTests.testGetUserByName(UserTests.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at api.endpoints.UserEndpoints.createuser(UserEndpoints.java:16)
+	at api.test.UserTests.testPostUser(UserTests.java:46)
+	... 28 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.UserTests#testPostUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at api.endpoints.UserEndpoints.createuser(UserEndpoints.java:16)
+	at api.test.UserTests.testPostUser(UserTests.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.lang.GroovyRuntimeException: Conflicting module versions. Module [groovy-xml is loaded in version 4.0.6 and you are trying to load version 4.0.11
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl$DefaultModuleListener.onModule(MetaClassRegistryImpl.java:534)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromProperties(ExtensionModuleScanner.java:87)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromMetaInf(ExtensionModuleScanner.java:81)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModulesFrom(ExtensionModuleScanner.java:63)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModules(ExtensionModuleScanner.java:54)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:133)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:94)
+	at groovy.lang.GroovySystem.&lt;clinit&gt;(GroovySystem.java:37)
+	... 36 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.UserTests#testUpdateUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at api.endpoints.UserEndpoints.updateuser(UserEndpoints.java:42)
+	at api.test.UserTests.testUpdateUserByName(UserTests.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at api.endpoints.UserEndpoints.createuser(UserEndpoints.java:16)
+	at api.test.UserTests.testPostUser(UserTests.java:46)
+	... 28 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
